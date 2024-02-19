@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: 'Noto Sans KR',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+$primary: #0074d9;
+$danger: #ff4136;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+/* 시그니처 색상 커스텀 */
+.signBkColor{background-color: red !important;}
+.signFontColor{color: red !important;}
+.signLineColor{border:1px solid red !important;}
+
+/* 백그라운드 컬러 커스텀 */
+.bgColorBk{background-color: #000; }
+
+/* padding값 class */
+.pd10{padding:10px;}
+.pd20{padding:20px;}
+.pd30{padding:30px;}
+
+.pt20{padding-top:20px;}
+.pt40{padding-top:40px;}
+.pt80{padding-top:80px;}
+
+.pl20{padding-left:20px;}
+.pl30{padding-left:30px;}
+
+.pr20{padding-right:20px;}
+.pr30{padding-right:30px;}
+
+.pb20{padding-bottom:20px;}
+.pb40{padding-bottom:40px;}
+.pb80{padding-bottom:80px;}
+
+.ptb40{padding-top:40px; padding-bottom:40px;}
+.ptb80{padding-top:80px; padding-bottom:80px;}
+
+/* margin값 class */
+.mt30{margin-top: 30px;}
+.mt80{margin-top:80px;}
+
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+.mb40{margin-bottom:40px;}
+
+.ml30{margin-left: 30px;}
+
+.mr30{margin-right: 30px;}
+
+
+/* 투명도 조절 */
+.backTrans{background-color: transparent !important;} // btnTrans
+.borderTrans{border:0px solid transparent !important;}
+
+/* dim layer - 검정막 */
+.dimBg{background-color: rgba(0, 0, 0, 0.5);}
+
+/* 인풋 커스텀 */
+.customInput{padding:20px; background-color: #454545; border:0px solid transparent !important; cursor: pointer;}
+.customInput:hover, .customInput:focus{background-color: #555555 !important; border:0px solid transparent !important;}
+input.customInput{color: #fff !important;}
+input.customInput::placeholder {color:#a1a1a1;}
+/* readonly일 때의 스타일 */
+input.replyInput:read-only {
+  background-color: #000;
+  border: 0px solid transparent;
+  color: #fff;
+  padding: 0.375rem 0;
+}
+
+/* 버튼 커스텀 */
+.submitBtn{background:red !important; border:0px solid transparent; height: 64px; vertical-align: text-top; transition: all 0.2s ease-in-out}
+.submitBtn:hover, .submitBtn:focus{background:rgb(202, 0, 0) !important; }
+
+.submitReverseBtn{background:transparent !important; border:1px solid #fff; height: 64px; vertical-align: text-top; transition: all 0.2s ease-in-out}
+.submitReverseBtn:hover, .submitReverseBtn:focus{background:rgba(197, 197, 197, 0.562) !important; border:1px solid #fff;}
+
+.deleteBtn{background:red !important; border:0px solid transparent; height: 64px; vertical-align: text-top; transition: all 0.2s ease-in-out}
+.deleteBtn:hover, .deleteBtn:focus{background:rgb(202, 0, 0) !important; }
+
+.deleteBtn{background:red !important; border:0px solid transparent; height: 64px; vertical-align: text-top; transition: all 0.2s ease-in-out}
+.deleteBtn:hover, .deleteBtn:focus{background:rgb(202, 0, 0) !important; }
+
+.btnFlexBox{display: flex; gap: 10px;}
+.btnFlexBox .flexBtn{width: calc(50% - 5px);}
+
+.closeBtn{color:#fff; transition: all 0.2s ease-in-out}
+.closeBtn:hover, .closeBtn:focus{color:red}
+
+.kakaoBtn{background-color:#e4d534; color:#381e1f; border:0px solid transparent; width:100%; height: 64px; vertical-align: text-top; font-weight: 500;
+background-image: url("../image/sns/kakaotalk_logo.png"); background-size: 45px 45px; background-position: 15px center; background-repeat: no-repeat; transition: all 0.2s ease-in-out}
+.kakaoBtn:hover, .kakaoBtn:focus{background-color:#e4d534cb; color:#381e1f;}
+
+.kakaoBtn2{background-color:transparent; color:#fff; border:1px solid #fff; width:100%; height: 64px; vertical-align: text-top; align-items: center; transition: all 0.2s ease-in-out}
+.kakaoBtn2:hover, .kakaoBtn2:focus{background-color:#a99e29;}
+
+// top 버튼 
+.topBtn{padding:15px; background-color: red; border:1px solid red;}
+.topBtn:hover, .topBtn:focus{ background-color: #b10000; border:1px solid #b10000;}
+
+/* position값 커스텀 */
+.positionCenter{position: absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+.position-fixed{position:fixed !important;}
+
+/*캐러셀 css 커스텀 */
+.carousel-control-next, .carousel-control-prev{ width: 5% !important;}
+.arrowBtnLeft{position: absolute; top: 0; left: -5%; background-color: transparent !important; border: 0px solid transparent !important;}
+.arrowBtnLeft:hover, .arrowBtnLeft:focus{background-color: transparent !important;  border: 0px solid transparent !important;}
+.arrowBtnRight{position: absolute; top: 0; right: -5%; background-color: transparent !important; border: 0px solid transparent;}
+.arrowBtnRight:hover, .arrowBtnRight:focus{background-color: transparent !important;  border: 0px solid transparent !important;}
+.arrowBtnLeft svg, .arrowBtnRight svg{font-size: 25px;}
+
+/*drop down*/
+.navbar-expand .navbar-nav .dropdown-menu {top:60px; left: -124px;}
+
+/* 마이페이지 찜리스트 5개씩 노출되도록 그리드 설정 */
+.grid-container { display: grid; gap: 10px;}
+.grid-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+.grid-item { width: 100%;}
+.grid-image {width: 100%; height: auto; max-width: 100%; max-height: 100%; border-radius: 10px; }
+
+
+/*--  애니메이션 커스텀 -- */
+/* 버튼 애니메이션 */
+.btnAnimation{transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+/* hover 시에 위로 살짝 올라가도록 애니메이션 적용 */
+.hoverAnimation {position: relative; transition: transform 0.3s ease-in-out;}
+.hoverAnimation:hover {transform: translateY(-10px);}
+
+/* 탭 콘텐츠 커스텀 */
+.nav-tabs .nav-link{color:#fff}
+
+/**/
+.mainSlideLogoBox{width: 100%; height: 300px; display: flex; align-items: flex-end;}
+
+.textOverflow3Lines{ width: 80%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 2;}
+
+// Landing style
+.scrollContentBoxMain{
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 5px solid rgb(99, 99, 99); 
+}
+
+.scrollContentBox{
+    max-width: 100vw;
+    width: 100%;
+    height: 800px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(99, 99, 99); 
+  }
+
+  .scrollContentBox:last-child{
+    border-bottom: 0px solid transparent; 
+  }
+
+.landingMainText{
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+  }
+
+.landingContTitle{
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 66px;
+  text-align: left;
+}
+.landingContText{
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left
+}
+
+.LinkedGoBtn{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(99, 98, 239), rgb(133, 118, 255));
+  z-index: 4;
+  box-shadow: rgba(76, 75, 208, 0.25) 0px 10px 15px 0px;
+  height: 70px;
+  border-radius: 15px;
+  min-width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 31.5px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.LinkedGoBtn:hover, .LinkedGoBtn:focus{
+  background: linear-gradient(to right, rgb(99, 98, 239), rgb(133, 118, 255));
+} 
+
+
+.landingLogos{width: 300px; grid-template-columns: 1fr 1fr 1fr; flex-direction: row; padding: 10px; gap: 15px; }
+.landingLogos img{width:80px; }
+
+
+.banner{width:100%; height:100px; background:#fff}
+.banner:hover,
+.banner:focus {
+  background: #c4c4c4; /* Change the background color on hover and focus */
+}
+
+
+// 트레일러 
+.trailerOpenBtn{ background-color: transparent; border: 0px solid transparent; padding: 0; margin-right: 30px; }
+.trailerOpenBtnIconBox{background-color: rgba(255, 255, 255, 0.2); padding: 15px 30px; text-align: center; color: rgb(255, 255, 255); border: 1px solid rgb(255, 255, 255); transition: all 0.2s ease-out 0.1s; display: flex; align-items: center;}
+.trailerOpenBtnIconBox:hover, .trailerOpenBtnIconBox:focus{background-color: rgba(255, 255, 255, 0.8); color:#000; }
+.trailerCloseBtn{ padding: 4px 8px; background: none; border: 0px solid transparent; top: 10px !important; right: 10px !important; display: flex; align-items: center; justify-content: center;}
+.trailerCloseBtn:hover, .trailerCloseBtn:focus{background-color: rgb(212, 2, 2); color:#000; }
+.trailerMovieBox{width:100%; height:100%; padding:50px; background: rgb(0 0 0 / 80%);}
+.trailerMovieIframe{width:100%; height:100%; }
+
+//
+.posterImg{ max-width: 100%; max-height: 100%; width: auto; height: auto; border-radius: 10px; }
+
+// Slide
+.slideArrowBox{ text-align: center; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); z-index: 10;}
+
+// iframe
+.ytp-chrome-top-buttons{display: none !important}
+.ytp-watermark .yt-uix-sessionlink{display: none !important}
